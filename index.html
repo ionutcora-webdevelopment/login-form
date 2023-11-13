@@ -13,6 +13,106 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+
+        <header>
+            <nav>
+                <div class="container">
+                    <div>
+                        <a class="logo" href="#">Logo</a>
+                    </div>
+                    <div class="top-menu">
+                        <div class="toggle-btn">
+                            <i class="fa fa-bars" id="menu-btn-toggle"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" id="login-btn">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hero-section">
+                <div class="form" id="login-form">
+                    <div class="exit-btn">
+                        <button id="login-exit">
+                            <i class="fa fa-close"></i>
+                        </button>
+                    </div>
+                    <h2>Login</h2>
+                    <form>
+                        <div>
+                            <label for="emial">Email</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password">
+                        </div>
+                        <div class="remember-section">
+                            <div>
+                                <input type="checkbox" name="remember">
+                                <label for="remember">Remember me</label>
+                            </div>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="submit">Login</button>
+                        </div>
+                        <div class="account-section">
+                            <p>Don't have an account?</p>
+                            <button id="register-btn">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form" id="register-form">
+                    <div class="exit-btn">
+                        <button id="register-exit">
+                            <i class="fa fa-close"></i>
+                        </button>
+                    </div>
+                    <h2>Register</h2>
+                    <form>
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" name="username">
+                        </div>
+                        <div>
+                            <label for="register-email">Email</label>
+                            <input type="email" name="register-email">
+                        </div>
+                        <div>
+                            <label for="register-password">Password</label>
+                            <input type="password" name="register-password">
+                        </div>
+                        <div class="agree-section">
+                            <input type="checkbox" name="agree">
+                            <label for="agree">I agree with the terms & conditions</label>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="submit">Register</button>
+                        </div>
+                        <div class="account-section">
+                            <p>Already have an account?</p>
+                            <button id="register-login-btn">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
         
         <script src="./script.js" async defer></script>
     </body>
