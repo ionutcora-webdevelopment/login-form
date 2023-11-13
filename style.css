@@ -1,0 +1,257 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background: url(./img.jpg);
+    background-repeat: none;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+
+nav .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav .logo:hover {
+    cursor: pointer;
+}
+
+.top-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu ul li {
+    list-style-type: none;
+}
+
+.top-menu ul a {
+    text-decoration: none;
+    padding: 7px 13px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-menu ul a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.top-menu ul li:last-of-type {
+    background: rgb(240, 60, 60);
+    border-radius: 5px;
+    padding: 7px 14px;
+    margin-left: 1rem;
+}
+
+.top-menu ul li:last-of-type:hover {
+    background: rgb(230, 60, 60);
+}
+
+.top-menu ul li:last-of-type a:hover {
+    text-decoration: none;
+}
+
+.toggle-btn {
+    display: none;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+#menu-btn-toggle {
+    font-size: 30px;
+    color: white;
+}
+
+#menu-btn-toggle:hover {
+    cursor: pointer;
+}
+
+.hero-section {
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    padding: 15px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    flex-direction: row;
+    height: auto;
+    width: 350px;
+}
+
+.form form {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.form button {
+    background: rgb(240, 60, 60);
+    border: none;
+}
+
+.form button:hover {
+    background: rgb(230, 60, 60);
+}
+
+.form button:hover {
+    cursor: pointer;
+}
+
+.exit-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.exit-btn button {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+.form form div {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+.form #login-exit {
+    padding: 5px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.form form .remember-section,
+.form form .remember-section div,
+.form form .account-section,
+.form form .agree-section {
+    flex-direction: row;
+}
+
+.form form .remember-section {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form form .remember-section input[type='checkbox'],
+.form form .agree-section input[type='checkbox'] {
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(240, 60, 60);
+}
+
+.form form .remember-section label,
+.form form .agree-section label {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.form form .remember-section a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.form form .account-section {
+    justify-content: center;
+}
+
+.form form input[type='email'],
+.form form input[type='password'],
+.form form input[type='text'] {
+    margin-top: 0.5rem;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.form form input[type='email']:focus,
+.form form input[type='password']:focus {
+    outline: none;
+}
+
+.form form .account-section button {
+    background: none;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.form .submit-btn button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        position: fixed;
+        top: -500%;
+        left: 0px;
+        padding: 2rem 0;
+        transition: all 1s;
+        background: transparent;
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        border-bottom: 2px solid rgba(255, 255, 255, .2);
+        background-color: #0d0d0f;
+    }
+
+    nav ul li,
+    .top-menu ul li:last-of-type {
+        margin: 1rem auto;
+    }
+
+    .toggle-btn {
+        display: flex;
+        width: 75%;
+    }
+}
